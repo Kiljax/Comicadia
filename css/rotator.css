@@ -1,0 +1,103 @@
+/*
+The following code is for the rotator for comicadia
+*/
+#ComicadiaHorizontalBox, #ComicadiaMobileHorizontalBox   {
+    background: #555555;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 8px;
+    box-shadow: 0px 3px #252a2e;
+	margin: 5px auto;
+    width: 700px;
+	padding-bottom: 3px;
+}
+
+#ComicadiaMobileHorizontalBox   {
+
+}
+
+#comicadia_rotator a {
+	float: left;
+}
+
+#comicadia_rotator img {
+    max-width: 100%;
+    vertical-align: bottom;
+    height: auto;
+}
+
+#comicadia_rotator a:hover  {
+	filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+.comicadiaBlock img {
+    margin-left: 10px;
+    margin-right: 10px;
+	margin-top: 2px;
+}
+
+.ComicadiaRotator {
+	width:150px; 
+	height:50px;
+	margin-left: 5px;
+    border: 1px solid #000;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	display: inline-block;
+	background-size: cover !important;
+}
+
+/* Responsive */
+
+	@media screen and (max-width:710px) {
+#comicadia_rotator a {
+    float: none;
+}
+#ComicadiaMobileHorizontalBox {
+    width: 95%;
+}
+#ComicadiaMobileHorizontalBox .ComicadiaRotator {
+  margin: 0.5%;
+    width: 24% !important;
+    padding-bottom: 8%;
+    float: left;
+}
+
+#ComicadiaMobileHorizontalBox .comicadiaBlock img {
+    margin: 5px auto;
+    width: 25%;
+    height: auto;
+    float: left;
+    padding-right: 5px;
+    padding-top: 3px;
+}
+
+	}
+	
+	@media screen and (max-width:480px) {
+		
+#comicadia_rotator #ComicadiaMobileHorizontalBox a { float: none;}
+
+#ComicadiaMobileHorizontalBox {
+    width: 95%;
+}
+#ComicadiaMobileHorizontalBox .ComicadiaRotator {	
+    margin: 0.5%;
+    width: 49% !important;
+    height: !important;
+    padding-bottom: 15%;
+    float: left;
+}
+#ComicadiaMobileHorizontalBox .comicadiaBlock img {
+	margin: 5px auto;
+    width: 50%;
+    height: auto;
+    float: left;
+    padding-right: 5px;
+	padding-top: 0px;
+}
+
+	}

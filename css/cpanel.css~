@@ -1,0 +1,122 @@
+/*
+The following code is for the admin control panel layout
+*/
+
+#topBar
+{
+ height: 25px;
+ width:100%;
+ background: grey;
+ color:black;
+}
+
+#adminWrap
+{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	margin-top: -1px;
+}
+
+#adminPanel
+{
+ position:fixed;
+ height:100%;
+ width:100%;
+ top:0;
+ left:0;
+}
+/*
+#login
+{
+ height:30px;
+ width:100px;
+ background:grey;
+ text-align:center;
+ color:black;
+ float:right;
+ line-height:30px;
+}
+*/
+#leftPanel
+{
+	height: 100%;
+	width: 150px;
+	background: grey;
+	color: teal;
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+
+
+#home
+{
+	float: left;
+	width: 150px;
+	height: 25px;
+	text-align: center;
+}
+
+#eventDatepickerwrap
+{
+	width:275px;
+}
+/*
+.icon-calendar modifies the attriubtes of the icon to select the time of an event
+
+.icon-calendar
+{
+	background:grey;
+	float:right;
+}
+*/
+
+
+#home:hover
+{
+	color:green;
+	background:lightgrey;
+}
+
+#contentWrap
+{
+	height: 100%;
+	width: 87.5%;
+	background: whitesmoke;
+	display: inline-block;
+}
+
+#contentPanel
+{
+  	height: 100%;
+	width: 100%;
+	background: white;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+
+.leftPanelItem
+{
+ width:100%;
+ height:50px;;
+ background:grey;
+ color: whitesmoke;
+ text-align:center;
+ line-height:50px;
+ border:none;
+}
+
+.leftPanelItem:hover
+{
+ background:darkgrey;
+ color:green;
+}
+/*
+#login:hover
+{
+ color:aqua;
+ background:darkgrey;
+}
+*/

@@ -1,0 +1,577 @@
+/*
+The following code is for the admin control panel layout
+*/
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
+
+html, form, input, textarea, select , #UserPanel{	
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 14pt;
+	color: #666666;
+}
+
+.clear {clear:both;}
+
+#home {
+	float: left;
+    margin: 5px;
+}
+#home:hover {
+
+}
+
+.dropLevel0 span, .dropLevel1 span, .dropLevel5, .Internal span, .imgmedia{ 
+	cursor:pointer;
+    display: block;
+}
+
+/* WEBSITE */
+
+#UserPanel, #AdminPanel {
+	width: 1200px;
+    margin: 20px auto;
+    background: #edfdfd;
+	color: #00879c;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+	border: 1px solid #00bcd9;
+}
+
+#topBar {
+    height: 70px;
+    width: 100%;
+    color: black;
+}
+
+#adminWrap {
+	display: inline-block;
+	width: 100%;
+    border-top: 1px solid #00bcd9;
+}
+
+/*
+#login
+{
+ height:30px;
+ width:100px;
+ background:grey;
+ text-align:center;
+ color:black;
+ float:right;
+ line-height:30px;
+}
+*/
+
+.cpanelHeader h2 {
+	color: #00879c;
+    border-bottom: 2px solid #7fbd59;
+	text-align: right;
+	}
+
+/* CONTENT */
+
+#contentWrap {
+	display: inline-block;
+    border-left: 1px solid #00bcd9;
+    width: 87%;
+	min-height: 560px;
+	padding-bottom: 10px;
+}
+
+input[type=button], input[type=reset], input[type=file]  {
+    border: 1px solid #337ab7;
+    background: #65cce6;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+	margin: 3px;
+	color: #fff;
+}
+
+input[type=button]:hover, .dropLevel5 div:hover {
+    background: #337ab7;
+	color: #fff;
+}
+input.up:hover, .uploadFromMachineButton, .uploadFromWebButton  {
+    background: #90cd66 !important;
+}
+input.rem:hover, .deleteComic {
+    background: #ff5156 !important;
+}
+
+#contentWrap button, #contentWrap input, #contentWrap select, #contentWrap textarea {
+    border: 1px solid #65cce6;
+	margin: 3px;
+}
+
+
+#contentPanel {
+	margin: 20px;
+}
+
+
+/* ------ THIS IS THE LEFT MENU ------ */
+
+#leftPanel {
+    width: 150px;
+    float: left;
+	margin-top: -1px;
+    padding-bottom: 1px;
+}
+.leftPanelItem {
+	width: 100%;
+    height: 50px;
+    background: #aeedf7;
+    color: #00879c;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+	border-left: 0;
+	border-top: 1px solid #00bcd9;
+    border-bottom: 1px solid #00bcd9;
+	border-right: 0;
+	margin-right: -1px;
+}
+
+.leftPanelItem:hover, .leftPanelItem:active  {
+	background: #50cee2;
+	color: white;
+}
+
+
+#eventDatepickerwrap
+{
+	width:275px;
+}
+/*
+.icon-calendar modifies the attriubtes of the icon to select the time of an event
+
+.icon-calendar
+{
+	background:grey;
+	float:right;
+}
+*/
+
+/* --- DASHBOARD --- */
+
+  .content-box {
+    height: auto;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 3px 5px #65cce6;
+	margin: 5px;
+	position: relative;
+	margin: 5px;
+
+	}
+    .content-box:before, .content-box:after {
+      content: ""; height: 2px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      -webkit-clip-path: polygon(0% 0%, 5%  100%, 10% 0%, 15%  100%, 20% 0%, 25% 100%, 30% 0%, 35%  100%, 40% 0%, 45%  100%, 50% 0%, 55%  100%, 60% 0%, 65%  100%, 70% 0%, 75%  100%, 80% 0%, 85%  100%, 90% 0%, 95%  100%, 100% 0%);
+    }
+    .content-box:before {
+      background-color: #edfdfd;
+      top: 0;
+    }
+    .content-box:after {
+      background-color: #fff;
+      bottom: -2px;
+    }
+
+#WelcomeDIV .content-box {
+	float: left;
+	width: 32%;
+}
+
+#EditProfile .content-box {
+
+}
+
+.profilePic img {
+	float: left;
+    margin: 5px;
+    border: 1px solid #ddd;
+	height: 50px;
+	width: 50px;
+}
+
+
+/* EDIT WEBCOMIC */
+
+.ComicLista, #editEventWrap .EventEntry, #editNewsWrap .NewsItem {
+    font-size: 20px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 3px 3px #65cce6;
+    margin: 5px auto;
+    border: 1px solid #337ab7;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	line-height: 35px;
+}	 
+
+.ComicLista span:before{ 
+    font-family: FontAwesome;
+    font-weight: normal;
+	content: "\f196";
+	padding-right: 2px;
+	}	
+span.socialMediaInput:before, span.profileMediaIcon:before{ 
+	content: none;
+	}		
+	
+	
+
+.dropLevel1 {
+	background: #00bcd9;
+    margin: 0;
+    padding: 0 10px;
+    color: white;
+	margin-bottom: 5px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.Internal {
+	display: none;
+    margin: 0px;
+    padding: 10px;
+}
+
+.ComicLista .checkboxWrap {
+	float: left;
+    width: 33%;
+}
+
+.imgmedia {
+    background: #90cd66;
+    padding: 2px 10px;
+    color: white;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+	float: left;
+    margin: 3px;
+}
+
+.imgPreview img {
+	max-width: 300px;
+	
+}
+
+.editWebcomicText {
+	width: 300px;
+	
+}
+
+.mediapreviewdiv {display: none;}
+.imageblock {
+	float: left;
+    width: 33%;}
+
+/* EDIT EVENTS  */
+
+ #editEventWrap .EventEntry {
+
+}	 
+	
+.EventEntry input[type=text], .EventEntry input[type=select], .EventEntry select, .EventEntry textarea,
+.NewsItem input[type=text], .NewsItem input[type=select], .NewsItem select, .NewsItem textarea,
+#newsTitleText, #newsDetailsText{
+    width: 100%;
+}
+	
+	
+
+/* LOGIN STYLE -pasted from style css-
+#login:hover
+{
+ color:aqua;
+ background:darkgrey;
+}
+*/
+
+
+#LoginBar{
+	width: 100%;
+	color: white;
+	height: 30px;
+}
+
+.LoginBTN{
+	margin: 0 auto;
+	width:100px;
+	height:30px;
+	background:khaki;
+	color:black;
+	float:right;
+	text-align:center;
+}
+
+#TopLogin {
+	float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+	}
+
+#TopLogin nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  float: right;
+  background: #eee;
+  -webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+
+#TopLogin nav li 
+{
+  float: left;          
+}
+
+#TopLogin nav #login  { 
+  border: 0; 
+}
+
+#TopLogin nav #login-trigger, nav #signup a, #Register  {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    padding: 0 8px;
+    text-decoration: none;
+    color: #fff;
+    background: #343434;
+}
+
+.input-group  span {
+    font-size: 20px;
+    color: #ffffff;
+	float: left;
+    width: 30px;
+    height: 40px;
+    padding-top: 10px;
+}
+
+
+#TopLogin nav #signup a {
+  border-radius: 0 3px 3px 0;
+}
+
+#TopLogin nav #login-trigger {
+  border-radius: 3px 0 0 3px;
+}
+
+#TopLogin nav #login-trigger:hover, #TopLogin nav #login .active, #TopLogin nav #signup a:hover {
+  background: #555;
+}
+
+#TopLogin nav #login-content {
+  display: none;
+  position: absolute;
+  top: 24px;
+  right: 0;
+  z-index: 999;    
+  background: #555;
+  background-image: linear-gradient(top, #fff, #eee);  
+  padding: 15px;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+  border-radius: 3px 0 3px 3px;
+}
+
+#TopLogin nav li #login-content 
+{
+  right: 0;
+  width: 250px;  
+}
+
+/*--------------------*/
+
+#TopLogin #inputs input, #login #Login  {
+    background: #343434;
+    padding: 6px 5px;
+    margin: 0 0 5px 0;
+    width: 86%;
+    border: 0;
+    border-radius: 20px;
+	color: white;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 20px;
+}
+
+#TopLogin #inputs input:focus, #TopLogin #inputs input:hover {
+  background: #000;
+}
+
+#TopLogin form {
+    margin-bottom: 0;
+}
+
+#TopLogin  fieldset {    
+text-align: center;
+}
+
+#PassMSG {
+	color: red;
+}
+
+/*--------------------*/
+
+#login #actions 
+{
+  margin: 10px 0 0 0;
+}
+
+
+
+#login #submit:hover,
+#login #submit:focus 
+{    
+  background-color: #e97171;
+  background-image: linear-gradient(top, #d14545, #e97171);
+} 
+
+#login #submit:active 
+{   
+  outline: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;   
+}
+
+#login #submit::-moz-focus-inner 
+{
+  border: none;
+}
+
+#login label 
+{
+  float: right;
+  line-height: 30px;
+}
+
+#login label input 
+{
+  position: relative;
+  top: 2px;
+  right: 2px;
+}
+
+
+
+
+/* ADMIN PANEL TWEAKS */
+#AdminPanel {
+    background: #edfdf0;
+	border: 1px solid #7cd900;
+	color: #259c00;
+}
+#AdminPanel .leftPanelItem {
+    background: #cdf7ae;
+    color: #259c00;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-left: 0;
+    border-top: 1px solid #7cd900;
+    border-bottom: 1px solid #7cd900;
+    border-right: 0;
+    margin-right: -1px;
+}
+#AdminPanel .leftPanelItem:hover, #AdminPanel .leftPanelItem:active , #AdminPanel input[type=button]:hover, #AdminPanel input[type=reset]:hover {
+    background: #71c348;
+    color: white;
+}
+
+#AdminPanel button, #AdminPanel input, #AdminPanel select, #AdminPanel textarea {
+    border: 1px solid #7cd900;
+}
+#AdminPanel input[type=button], #AdminPanel input[type=reset] {
+    background: #cdf7ae;
+	color: #259c00;
+}
+#AdminPanel #adminWrap {
+    border-top: 1px solid #7cd900;
+}
+#AdminPanel #contentWrap {
+    border-left: 1px solid #7cd900;
+}
+#AdminPanel .cpanelHeader h2 {
+    color: #259c00;
+    border-bottom: 2px solid #e66565;
+}
+
+#AdminPanel .ComicLista, #AdminPanel  .EventEntry, #AdminPanel .NewsItem  {
+    box-shadow: 3px 3px rgba(124, 217, 0, 0.26);
+    border: 1px solid #259c00;
+}
+
+#AdminPanel .EUTH {
+    background-color: #259c00;
+    color: white;
+	border: 1px solid #edfdf0;
+}
+
+#AdminPanel  .EUTD {
+    border: 1px solid #edfdf0;
+    background: #ffffff;
+}
+
+.socialMediaInput span {
+	display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 40px;
+    padding: 2px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    color: white;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+.Internal span.socialMediaInput {
+display: inline;
+}
+/* //////RESPONSIVE TWEAKS////// */
+
+	/* 1280px or less */
+	@media screen and (max-width:1280px) {
+
+	}
+
+
+	/* 980px or less */
+	@media screen and (max-width:980px) {
+
+	
+	}
+ 
+	/* 700px or less */
+	@media screen and (max-width:700px) {
+		
+		
+	}
+ 
+	/* 480px or less */
+	@media screen and (max-width:480px) {
+		
+		
+	}
+
+	
+

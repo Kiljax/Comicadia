@@ -1,0 +1,1622 @@
+﻿/* COMICADIA CSS! */
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
+
+/* Some code, design purposes */
+
+* { box-sizing: border-box; }
+
+.clear { clear: both; }
+
+.Internal, .toggle-nav, .responsive { display: none; }
+
+button, input, select, textarea {
+    border: 1px solid #65cce6;
+}
+
+input[type=button], input[type=reset], input[type=file]  {
+    border: 1px solid #337ab7;
+    background: #555555;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin: 3px;
+    color: #fff;
+    margin: 5px auto;
+    width: 100%;
+}
+
+input[type=button]:hover, .dropLevel5 div:hover {
+    background: #337ab7;
+	color: #fff;
+}
+
+
+#home { 
+	cursor:pointer;
+    display: block;
+}
+
+/* logo colors for defining elements
+:root {
+  --cblue: #65cce6;
+  --cred: #ff5156;
+  --cgreen: #90cd66;
+  --cdgray: #343434;
+  --cgray: #555555;
+} */
+
+/* THE LAYOUT AS IS */
+
+
+#MainContent {
+	font-family: Helvetica, Arial, Sans-Serif;
+
+}
+
+#BodyMain {
+    width: 1200px;
+	margin: 0 auto;
+	font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15pt;
+	padding-bottom: 10px;
+}
+
+
+#IndexContent {
+	float: left;
+	width: 66.66%;
+}
+
+#BodyMain  h1, #BodyMain  h2, #BodyMain  h3 {
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 35px;
+    background-color: #343434;
+    color: #65cce6;
+    padding: 10px;
+	-webkit-border-top-left-radius: 20px;
+-webkit-border-bottom-right-radius: 20px;
+-moz-border-radius-topleft: 20px;
+-moz-border-radius-bottomright: 20px;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+	box-shadow: 3px 3px #65cce6;
+}
+
+#BodyMain  h1 {
+    font-size: 38px;
+    color: #fff;
+    box-shadow: 3px 3px #dbdfe4;
+}
+
+#BodyMain  h3 {
+    font-size: 25px;
+    color: #90cd66;
+    box-shadow: 3px 3px #90cd66;
+}
+
+#Sidebar {
+	float: right;
+	width: 33.33%;
+	padding: 10px;
+}
+
+#Sidebar  .newsBox .NewsText img{
+	width: 100% !important;
+}
+
+
+#Header {
+	display:inline-block;
+	margin: 0;
+	position: relative;
+	height: 200px;
+	width: 1000px;
+}
+
+
+
+#goHomeDiv
+{
+	width: 625px;
+	height: 125px;
+	position: absolute;
+	left: 50;
+	top: 6;	
+}
+
+/*
+{
+	margin:0;
+	background-color:red;
+	position: relative;
+	width: 250px;
+	height: 250px
+}
+*/
+
+.HeaderBG {
+	background-color: #343434;
+	height: 250px;
+	background-size: cover;
+    background-position: right center;
+}
+
+
+#HeaderCredit {
+	float: right;
+    margin: -34px 8px 0 0;
+    color: #000;
+    text-shadow: black;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 4px;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	}
+	
+#HeaderCredit a {  
+	color: #000!important;
+    text-decoration: none;
+    font-weight: bold; }
+#HeaderCredit a:hover {  color: #65cce6!important;}
+	
+	
+.TopBar {
+	background: #555555;
+    height: 75px;
+	/* -webkit-box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.75); */
+	/* -moz-box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.75); */
+	/* box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.75); */
+	border-bottom: 3px solid #000;
+}
+
+.ComicadiaLogo {
+	width: 680px;
+    float: left;
+	z-index: 1;
+	margin-left: 10%;
+}
+
+.ComicadiaLogo img{
+    z-index: 1;
+    margin-top: -70px;
+    background-color: #555555;
+    padding: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+	/* -webkit-box-shadow: 0px -8px 5px -6px rgba(0,0,0,0.75); */
+	/* -moz-box-shadow: 0px -8px 5px -6px rgba(0,0,0,0.75); */
+	/* box-shadow: 0px -8px 5px -6px rgba(0,0,0,0.75); */
+}
+
+/*----- TOP NAV -----*/
+
+#TopNav {
+	width: 1200px;
+	height: 55px;
+	background-color: #343434;
+	margin: 0 auto;
+	-webkit-border-bottom-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+#TopNav  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 15px;
+}
+
+#TopNav li {
+    float: left;
+}
+
+#TopNav  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 20px;
+    text-decoration: none;
+	font-family: 'Barlow Condensed', sans-serif;
+    font-size: 27px;
+}
+
+#TopNav li a:hover {
+    background-color: #111;
+}
+
+#TopNav  .active {
+    background-color: #4CAF50;
+}
+
+/*----- Submenu -----*/
+
+
+#TopNav ul ul {
+	display: none;
+    position: absolute;
+    z-index: 10;
+	transition: all linear 0.15s;
+	padding: 0px 0px;
+}
+	
+#TopNav ul li:hover > ul {
+	display:inherit;
+	background: #555555;
+}
+	
+#TopNav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+	transition: all linear 0.15s;
+}
+
+#TopNav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+#TopNav li > a:after { content: '\f103'; 
+	font-family: FontAwesome;
+	padding: 5px;
+    font-size: 20px;
+    color: #90cd66;}
+#TopNav li > a:only-child:after { content: ''; }
+
+
+/*-------------------- FOOTER ----------------------------*/
+
+#Footer{
+    width: 100%;
+    margin: 0 auto;
+    background: #eee;
+    padding: 10px 15%;
+	border-top: 3px solid #ccc;
+}
+
+.footergrid {
+	float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.footergrid  h2{
+	font-family: 'Barlow Condensed', sans-serif;
+    font-size: 27px;
+	color: #000;
+	border-bottom: 1px solid #b9b9b9;
+	margin-top: 0;
+}
+
+.copyright {
+	background: #343434;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* end THE LAYOUT AS IS */
+
+
+/*
+#SocMedia
+{
+	width:150px;
+	height:100%;
+	position:relative;
+	float:right;
+	background-color: magenta;
+}
+*/
+
+
+/* ///// HOME ////// */
+
+#CadenceAnnounces {    
+	float: left;
+    margin: 10px;
+	background-position: center center;
+	}
+
+#splashMessage {
+	    position: relative;
+    background: #81be5a;
+    border-radius: .4em;
+    float: right;
+    width: 73%;
+    margin: 20px;
+    box-shadow: 3px 3px #eee;
+    border: 2px solid #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+#splashMessage:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 17px solid transparent;
+	border-right-color: #81be5a;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -8.5px;
+	margin-left: -17px;
+}
+
+.splashHeader {
+    display: block;
+    margin: 10px;
+    font-size: 25px;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.splashMessage {
+    margin: 10px;
+    display: block;
+}
+
+/* /////------------------------- NEWS -------------------------//////*/
+
+.Newsinfo{
+	margin: 5px;
+    border: 1px solid #dbdfe4;
+    background: #f9f9f9;
+    padding: 10px;
+}
+	
+	
+	
+/* ///// CAROUSEL //////
+The following code defines the size, shape and display type of the carousel
+The background/img within the carousel will be pulled from the database.
+*/
+
+#CarouselHolder {
+	padding-top: 10px;
+	height: 360px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#ComicCarousel {
+	text-align: center;
+}
+
+#CarouselWrap {
+	border-style: solid;
+}
+
+.item {
+	height:360px;
+	width:1220px;
+}
+
+.startItem
+{
+	height:300px;
+	width:700px;
+}
+
+/*End Carousel*/
+
+/* //////SOCIAL MEDIA //////
+The following blocks of code are for the Social Media bar and their respective 'buttons'
+*/
+
+.Social {
+	float: right;
+	margin: 8px;
+}
+
+div.SocDiv {
+	display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 40px;
+    padding: 8px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    color: white;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.SocDiv  span{display: none}
+
+#TwitterDiv {
+	background-color: #00aced;
+}
+
+#TumblrDiv {
+	background-color: #32506d;
+}
+
+#FacebookDiv {
+	background-color:#3b5998;
+}
+
+#InstagramDiv {
+	background-color:#bc2a8d;
+}
+
+#DiscordDiv {
+	background-color: #7289DA;
+	background-image: url(media/discord-logo.png);
+	background-size: cover;
+	color: transparent;
+}
+
+.Social div:hover {
+	filter: gray;
+    -webkit-filter: grayscale(50%);
+}
+
+/*
+End Social Media
+*/
+
+/* //////COMIC GRID SQUARE /////
+The following block of code is for the recently upgrdated comics grid. This defines the basic size and shape of the boxes. 
+The boxes themselves will be filled with images taken directly from the database.
+*/
+
+#RecentlyUpdated {
+
+}
+
+.RSSRecent {
+
+}
+
+
+/*Common grid code*/
+
+
+.fdw-subtitle a{ color:#ff5156; }	
+.fdw-subtitle a:hover{ color:#90cd66; }
+
+
+.fdw-port a{ 
+    background-color: #65cce6;
+    color: #fff;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-decoration: none;
+	}
+.fdw-port .fdw-more{background-color: #90cd66!important;} 		
+.fdw-port a:hover{ 
+	background-color:#f2f2f2; 
+	color:#65cce6;
+	text-decoration: none;	
+	}		
+.fdw-port .fdw-more:hover{ 
+	background-color:#f2f2f2 !important;  
+	color:#90cd66 !important; 
+	}	
+
+	
+.comicsearching {
+	font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    background-color: #f3f3f3;
+    color: #65cce6;
+    padding: 10px;
+    box-shadow: 3px 3px #65cce6;
+    margin: 5px auto;
+    width: 50%;
+    border: 1px solid #337ab7;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}	
+
+.dropLevel0:before{ 
+    font-family: FontAwesome;
+    font-weight: normal;
+	content: "\f196";
+	padding-right: 2px;
+	}	
+	
+	
+	
+#ComicSearchParameters span{	    
+	background: #90cd66;
+    padding: 2px 10px;
+    color: white;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+#searchComicButton{
+	width: 100%;
+    border: 1px solid #337ab7;
+    background: #65cce6;
+    color: #fff;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;	
+	margin-top: 10px;
+}
+
+#ComicSearchParameters span:hover, #searchComicButton:hover{	
+	background: #ff5156;
+}
+
+#comicSearchByNameInternal {
+	margin-top: 10px;	
+}
+
+#comicSearchByGenreInternal .checkboxWrap, #comicSearchByThemeInternal .checkboxWrap {
+	float: left;
+    width: 33%;
+	
+}
+
+
+	
+/* ///// COMIC GRID - *SQUARE ////// */
+
+.squaregridparent {
+	height: 0;
+	margin: 0.33%;
+    padding-bottom: 32%;
+    position: relative;
+    width: 32.33%;
+    float: left;
+    background-size: cover;
+    border: 2px solid #fff;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.gridGeneral{box-shadow: 3px 3px #90cd66;}
+.gridPG {box-shadow: 3px 3px #65cce6; }
+.gridAdult{box-shadow: 3px 3px #ff5156;}
+
+.squaregrid{ 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%; 
+	height: 100%;
+	background-color: rgba(52, 52, 52, 0.87);
+	opacity:0; 
+	color: #fff;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	}
+.squaregrid h4{
+	font-size:35px; 
+	font-family: 'Barlow Condensed', sans-serif;
+	text-align:center; 
+    padding: 25px 0 0 0;
+    border-bottom: 1px solid #5bc0de;
+    margin-bottom: 20px;
+	}		
+.squaredescr {
+	padding: 0px 20px 0 20px;
+	text-shadow: 2px 2px 8px #000;
+	}		
+.squaregrid .fdw-port{ padding:0 40px 0; }
+.squaregrid .fdw-port a{ 
+	padding:8px 15px; 
+	font-size:20px; }
+
+.squaregrid .fdw-subtitle,.squaregrid  .fdw-port{
+	font-size:12pt;
+	text-align: center;
+	padding-bottom: 20px;
+ }
+
+/* ///// COMIC GRID - HORIZONTAL ////// */
+
+.horizgridparent {
+	height: 0;
+    padding-bottom: 12.7%;
+    position: relative;
+    width: 100%;
+    float: left;
+    background-size: cover;
+    border: 2px solid #fff;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	margin-bottom: 5px;
+
+}
+
+.rssGeneral{box-shadow: 3px 3px #90cd66;}
+.rssPG {box-shadow: 3px 3px #65cce6; }
+.rssAdult{box-shadow: 3px 3px #ff5156;}
+
+.horizgrid{ 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%; 
+	height: 100%;
+	background-color: rgba(52, 52, 52, 0.87);
+	opacity:0; 
+	color: #fff;
+	-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+    background-position: center left;
+    background-repeat: no-repeat;
+	padding-left: 18%;
+	}
+.tophoriztitle {
+	width: 100%
+	clear: both;
+}	
+.horizgrid .horiztitle{
+	font-size:30px; 
+	font-family: 'Barlow Condensed', sans-serif;
+	}		
+.horizdescr {
+	padding-right: 15px;
+	text-shadow: 2px 2px 8px #000;
+	line-height: 20px;
+	}		
+.horizgrid .fdw-port{ 
+	padding: 9px 0;
+    float: right;
+    width: 105px;
+}
+.horizgrid .fdw-port a{ 
+	padding: 8px 15px;
+    font-size: 20px;
+line-height: 45px; }
+
+.horizgrid .fdw-subtitle{
+	font-size:14pt;
+	text-align: center;
+	padding-bottom: 10px;
+ }
+
+	
+/*
+End RSS Grid code
+*/
+/*
+
+*/
+
+#NewsDiv {
+
+}
+
+/*
+A default spacer class for adding small 10 pixel size spaces, for design purposes only
+*/
+.Spacer
+{
+	height:10px;
+	width:100%;
+}
+
+/* //// NEWS //////
+The following CSS code is to define the news feed boxes and display.
+*/
+
+.newsTitle {
+	font-family: 'Barlow Condensed', sans-serif;
+    font-size: 25px;
+    color: #65cce6;
+    padding: 0 10px 10px 0px;
+}
+
+.newsBox {
+    padding: 10px;
+    width: 100%;
+    border: #e0e0e0 1px solid;
+    color: #555555;
+    margin: 10px auto;
+    box-shadow: 3px 3px #eee;
+}
+
+.iconHolder {
+	background-color: #333;
+	float: left;
+	margin: 5px;
+	border: 2px solid #fff;
+    box-shadow: 3px 3px #90cd66;
+}
+.iconHolder img{
+border: 1px solid #000; 
+}
+
+.NewsHeader {
+	width: 100%;
+	display: inline-block;
+}
+.NewsText
+{
+	margin-top:10px;
+}
+
+.Poster
+{
+	margin-left: 60px;
+	margin-top: -15px;
+}
+
+.Poster sub, .Poster  sup {
+    position: initial;
+    font-size: 75%;
+    line-height: initial;
+    vertical-align: baseline;
+}
+
+/*
+End News CSS code
+*/
+
+
+
+/* //////COMIC PROFILE ///// */
+
+#ComicProfile .profil1 {
+	float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+#ComicProfile .profil2 {
+	float: left;
+    width: 66.66%;
+    padding: 10px;
+}
+
+.comicPitch{
+	background-color: #edfcff;
+    font-size: 22px;
+    padding: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px #ddd;
+    border: 1px solid #999;
+}
+
+#comicGenres, #comicThemes {
+    margin-top: 10px;
+}
+
+#comicURL, #comicRSS {
+	border: 1px solid #ccc;
+    background: #555555;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin: 3px;
+    color: #fff;
+    margin: 5px;
+    width: 47%;
+    padding: 10px;
+    display: block;
+    float: left;
+    text-align: center;
+	text-decoration: none;
+}
+#comicURL:hover, #comicRSS:hover {
+    background: #a94442;
+}
+
+#comicCrew .dropLevel1 {
+    float: left;
+    margin: 5px;
+    border: 1px solid #000;
+}
+
+.comilefti{
+	float: left;
+	margin-right: 5px;
+	
+}
+
+span.themeSpan:after, span.genreSpan:after, span.themeSpan:before, span.genreSpan:before  {
+    content:"";
+	position:absolute
+}
+span.themeSpan, span.genreSpan {
+	margin: 5px 10px 0 13px;
+    padding: 3px 7px 3px 12px;
+    border: none;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 19px;
+	background-color: #d5faff;
+	position: relative;
+    float: left;
+}
+
+span.themeSpan:before, span.genreSpan:before {
+    top: 0;
+    left: -13px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-right: 13px solid #d5faff;
+    border-bottom: 13px solid transparent;
+}
+
+span.themeSpan:after, span.genreSpan:after {
+    background: #ffffff none repeat center top;
+}
+
+
+#SquarePreview img {    
+	-webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 3px 3px #ddd;
+    border: 2px solid #fff;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+	}
+
+.comicDetailsText img {
+	max-width: 100%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+		
+	}
+
+/*
+End COMIC PROFILE
+*/
+
+
+
+#Content
+{
+	width:100%;
+}
+
+/* 
+The following CSS code is for the tables displayed n the editNews part of the admin page
+*/
+
+.newsTable
+{
+text-align:center;
+width:100%;
+}
+
+.newsTable td, th 
+{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.newsTable tr:nth-child(even)
+{
+background-color: #f2f2f2;
+}
+
+.newsTable tr:hover 
+{
+background-color: goldenrod;
+}
+
+.newsTable th 
+{
+background-color: #ab6868;
+color: white;
+text-transform: uppercase;
+text-align: center;
+padding: 10px;
+}
+
+.newsOption
+{
+	display:inline-table;
+}
+
+.newsOption:hover
+{
+	background-color: #f2f2f2;	
+}
+
+#newsDetailsText
+{
+	width: 700px;
+	height: 250px;
+}
+
+/*
+End NEws CSS
+*/
+
+/*
+The following CSS code is for the edit users table which is created through clickable DIV tags.
+*/
+
+#editUsers
+{
+	text-align:center;
+	width:100%;
+	display:table;
+}
+
+#editNewsContent
+{
+	text-align:center;
+	width:100%;
+	display:table;
+}
+
+#editWebcomicTable
+{
+	text-align:center;
+	width:100%;
+	display:table;
+}
+
+/*
+The following code defines the use of div tags as table equivalent
+This allows for the displays to remain standardized and easily modifiable. 
+*/
+.EUTH 
+{
+    border: 1px solid #ddd;
+    padding: 8px;
+    display:table-cell;
+}
+
+.EUTD
+{
+	border: 1px solid #ddd;
+    padding: 8px;
+    display:table-cell;
+}
+
+.EUTR
+{
+	display:table-row;
+	background-color: #f2f2f2;
+}
+
+.EUTR:hover 
+{
+background-color: goldenrod;
+}
+
+.EUTH 
+{
+background-color: #ab6868;
+color: white;
+text-transform: uppercase;
+text-align: center;
+padding: 10px;
+}
+
+.newsOption
+{
+	display:inline-table;
+}
+
+.newsOption:hover
+{
+	background-color: #f2f2f2;	
+}
+
+#newsDetailsText
+{
+	width: 700px;
+	height: 250px;
+}
+
+/*
+End edit News and User CSS Block
+*/
+
+
+/*
+The following CSS code is for the drop down navmenu for logging in.
+*/
+
+#LoginBar{
+	width: 100%;
+	color: white;
+	height: 30px;
+}
+
+.LoginBTN{
+	margin: 0 auto;
+	width:100px;
+	height:30px;
+	background:khaki;
+	color:black;
+	float:right;
+	text-align:center;
+}
+
+#TopLogin nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  float: right;
+  background: #eee;
+  -webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+
+#TopLogin nav li 
+{
+  float: left;          
+}
+
+#TopLogin nav #login  { 
+  border: 0; 
+}
+
+#TopLogin nav #login-trigger, nav #signup a, #Register  {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    padding: 0 8px;
+    text-decoration: none;
+    color: #fff;
+    background: #343434;
+}
+
+.input-group  span {
+    font-size: 20px;
+    color: #ffffff;
+	float: left;
+    width: 30px;
+    height: 40px;
+    padding-top: 10px;
+}
+
+
+#TopLogin nav #signup a {
+  border-radius: 0 3px 3px 0;
+}
+
+#TopLogin nav #login-trigger {
+  border-radius: 3px 0 0 3px;
+}
+
+#TopLogin nav #login-trigger:hover, #TopLogin nav #login .active, #TopLogin nav #signup a:hover {
+  background: #555;
+}
+
+#TopLogin nav #login-content {
+  display: none;
+  position: absolute;
+  top: 24px;
+  right: 0;
+  z-index: 999;    
+  background: #555;
+  background-image: linear-gradient(top, #fff, #eee);  
+  padding: 15px;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+  border-radius: 3px 0 3px 3px;
+}
+
+#TopLogin nav li #login-content 
+{
+  right: 0;
+  width: 250px;  
+}
+
+/*--------------------*/
+
+#TopLogin #inputs input, #login #Login  {
+    background: #343434;
+    padding: 6px 5px;
+    margin: 0 0 5px 0;
+    width: 86%;
+    border: 0;
+    border-radius: 20px;
+	color: white;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 20px;
+}
+
+#TopLogin #inputs input:focus, #TopLogin #inputs input:hover {
+  background: #000;
+}
+
+#TopLogin form {
+    margin-bottom: 0;
+}
+
+#TopLogin  fieldset {    
+text-align: center;
+}
+
+#PassMSG {
+	color: red;
+}
+
+/*--------------------*/
+
+#login #actions 
+{
+  margin: 10px 0 0 0;
+}
+
+
+
+#login #submit:hover,
+#login #submit:focus 
+{    
+  background-color: #e97171;
+  background-image: linear-gradient(top, #d14545, #e97171);
+} 
+
+#login #submit:active 
+{   
+  outline: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;   
+}
+
+#login #submit::-moz-focus-inner 
+{
+  border: none;
+}
+
+#login label 
+{
+  float: right;
+  line-height: 30px;
+}
+
+#login label input 
+{
+  position: relative;
+  top: 2px;
+  right: 2px;
+}
+
+/* //////EVENT LIST////// */
+.eventlist {    
+	float: left;
+    width: 210px;
+	padding-right: 5px;
+	}
+.eventwrap{
+	text-align: center;
+}
+
+.eventelement div {
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+	text-align: center;
+    box-shadow: 3px 3px #eee;
+}
+
+.eventelement h5 {
+	font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3px;
+    border-radius: 10px;
+	margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.eventelement h5:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+ }
+ .eventelement div:hover {opacity: 0.5;}
+ 
+.EventMeet h5:before { content: "\f0c0";}
+.EventEmergency h5:before{ content: "\f0d6";}
+.EventCrowdfunding h5:before{ content: "\f091";}
+.EventConvention h5:before{ content: "\f145";}
+.EventChapter h5:before{ content: "\f02e";}
+.EventDrawpile h5:before{ content: "\f1fc";}
+.EventLive h5:before{ content: "\f03d";}
+.EventBirthday  h5:before{ content: "\f1fd";}
+.EventOther  h5:before{ content: "\f005";}
+
+ 
+
+.EventMeet {	background-color: #c18b11;}
+.EventEmergency { background-color: #ffc55c;}
+.EventCrowdfunding { background-color: #a6f92d;}
+.EventConvention { background-color: #ff4040;}
+.EventChapter { background-color: #59eef5;}
+.EventDrawpile, .EventLive {	background-color: #d4b6ff;}
+.EventBirthday  {background-color: #dd7ad6;}
+.EventOther { background-color: #c5e4ec;}
+
+/* //////ADS CSS////// */
+
+
+.anunlong, #googleLeaderWrap {
+	background-image: url(media/lw.jpg);
+	margin: 10 auto;
+    width: 728px;
+    height: 90px;
+}
+
+.anuntower, #googleTower {
+	background-image: url(media/gt.jpg);
+	width: 160px;
+    height: 600px;
+	float: right;
+	margin-top: 20px;
+	}
+
+.anunfoot, #googleSquare {
+	background-image: url(media/gs.jpg);
+	width: 300px;
+    height: 250px;
+	margin: 10 auto;
+}
+
+.anunlong, .anunsqua, .anunfoot, .anuntower, #googleLeaderWrap, #googleTower, #googleSquare  {
+
+    background-position: center center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 3px 3px #f0464c;
+}
+/* //////////// -------------------------- RESPONSIVE TWEAKS --------------------------------------------//////////// */
+
+/* 1280px or less */
+	@media all and (max-width:1280px) {
+#MainContent {
+    min-width: 1280px;
+}		
+		
+#TopNav { width: 95%;}
+.ComicadiaLogo { margin-left: 20px;}
+.Social { margin-right: 5px;}
+#BodyMain { width: 99%;}
+
+	#splashMessage {
+	margin: 0px;
+    margin-top: 20px;	
+}
+
+#Footer {
+	padding: 10px;
+    min-width: 1280px;
+	}
+
+}
+
+/* 1080px or less */
+	@media all and (max-width:1080px) {
+#MainContent {
+    min-width: 0px;
+}			
+.Social { 
+	margin-right: 0;
+	padding-top: 10px;
+	}
+	
+div.SocDiv {
+    margin-left: 0px;
+    margin-right: 5px;
+    font-size: 25px;
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+}	
+
+.eventlist {
+    width: 50%;
+}
+	}
+
+/* 980px or less */
+	@media all and (max-width:980px) {
+		#MainContent {
+    min-width: 932px;
+}	
+.ComicadiaLogo { width: auto; }
+
+#comicURL, #comicRSS { width: 100%;}
+
+
+#TopNav {
+    width: 100%;
+	-webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-bottom-radius: 0px;
+}	
+
+.squaredescr, .squaregrid .fdw-port a {
+    font-size: 80%;
+}
+
+	}	
+ 
+/* 700px or less */
+	@media all and (max-width:700px) {
+		#MainContent {
+    min-width: 0px;
+}	
+.HeaderBG, #HeaderCredit, .TopBar div.Social, #TopHeader #TopLogin { display: none; }	
+
+.TopBar {
+    height: 75px;
+}		
+.ComicadiaLogo {
+    width: 100%;
+    float: none;
+    margin-left: 0%;
+}
+
+.ComicadiaLogo img {
+    background-color: transparent;
+    padding: 10px;
+    height: 75px;
+	margin-top: 0px;
+	-webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+	margin-left: 105px;
+}
+
+#bodyMain {
+    width: 100%;
+    padding: 5px;
+}
+
+#IndexContent {
+    float: none;
+    width: 100%;
+}	
+
+#TopLogin nav ul {
+    float: right;
+    background: #343434;
+    text-align: center;
+	height: 72px;
+}
+#TopLogin nav li {
+    float: none;
+    padding: 6px;
+}
+
+#Sidebar {
+    float: none;
+    width: 99%;
+}	
+
+#Footer {min-width: 0px;}
+.footergrid {width: 50%;}
+
+
+.eventlist {
+    width: 70%;
+}
+
+.anuntower {
+    width: 29%;
+}
+
+#CadenceAnnounces {   
+	width: 25% !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 0;
+	}
+	
+#splashMessage {
+    width: 68%;
+    margin: 5px;
+}
+
+.comicsearching { width: 90%;}
+.squaregridparent {
+    padding-bottom: 48%;
+    width: 49%;
+    margin: 0.5%;
+	}
+.squaregrid .fdw-port { padding: 0;}
+.squaregrid h4 { padding: 5px 0 0 0;}
+
+
+.horizgrid { background-position: -28px; padding-left: 15%;}
+.horizgrid .horiztitle { font-size: 25px;}
+.horizdescr, .horizgrid .fdw-subtitle { font-size: 80%;}
+.horizgrid .fdw-port a {
+    font-size: 80%;
+    line-height: 38px;
+}
+.horizgrid .fdw-port {
+    padding: 5px 0;
+    width: 16%;
+}
+/* -----------------Resp Menu------------------------- */
+	.responsive {display: inline;}
+			
+    #TopNav {
+        position:relative;
+        display:inline-block;
+		background: transparent;
+		height: 0px;
+    }
+ 
+    #TopNav ul.active {
+        display:none;
+    }
+ 
+    #TopNav ul {
+        position:absolute;
+        top:120%;
+        left:0px;
+        padding:10px 18px;
+        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+        border-radius:3px;
+        background:#303030;
+		margin-left: 5px;
+		z-index: 10;
+    }
+ 
+    #TopNav ul:after {
+        width:0px;
+        height:0px;
+        position:absolute;
+        top:0%;
+        left:22px;
+        content:'';
+        transform:translate(0%, -100%);
+        border-left:7px solid transparent;
+        border-right:7px solid transparent;
+        border-bottom:7px solid #303030;
+    }
+ 
+    #TopNav li {
+        margin:5px 0px 5px 0px;
+        float:none;
+        display:block;
+    }
+ 
+    #TopNav a {
+        display:block;
+    }
+ 
+   #TopNav .toggle-nav {
+        padding:15px;
+        float:left;
+        display:inline-block;
+        background:#303030;
+        text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+        color:#fff;
+        font-size:20px;
+        transition:color linear 0.15s;
+		margin-top: -68px;
+		margin-left: 5px;
+    }
+ 
+   #TopNav .toggle-nav:hover, #TopNav .toggle-nav.active {
+        text-decoration:none;
+        color:#90cd66;
+    }
+	
+	#TopNav ul ul.active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+	
+	#TopNav ul ul {
+    position: relative;
+    z-index: 0;
+	}
+
+#TopNav ul li:hover > ul {
+	display:inherit;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+	
+	#TopNav ul ul li {
+    width: auto;
+	}
+	#TopNav ul ul li a {
+    font-size: 20px;
+}
+
+}	
+	
+/* 480px or less */
+	@media all and (max-width:480px) {
+	
+#ComicProfile .profil1, #ComicProfile .profil2 {  width: 100%;}
+
+	#CadenceAnnounces {
+    width: 40% !important;
+    margin: 0;
+	}
+	#splashMessage {
+    width: 60%;
+    margin: 5px 0px;
+}
+.splashHeader {
+    margin: 5px;
+    font-size: 22px;
+    margin-bottom: 0px;
+}	
+
+.splashMessage { 
+    font-size: 75%;
+    text-align: justify;
+}	
+		
+.toggle-nav span, .horiztitle, .fdw-subtitle, .horizdescr { display:none; }
+	.ComicadiaLogo img { margin-left: 50px;}
+	#TopNav .toggle-nav { margin-top: -65px;}
+	
+.horizgrid .fdw-port {
+    padding: 5px;
+    float: right;
+    width: 100%;
+    text-align: right;
+}	
+.squaredescr {
+    font-size: 20px;
+}
+.squaregrid .fdw-port a {
+    padding: 5px 10px;
+    font-size: 25px;
+}
+
+.horizgrid .fdw-port a {
+    padding: 5px 10px;
+    font-size: 18px;
+    line-height: 0;
+}
+	
+.squaregridparent {
+    margin: 3px auto;
+    width: 99%;
+    float: none;
+	padding-bottom: 99%;
+}	
+		
+.eventlist, .anuntower { width: 48%;}
+#Footer { padding: 5px; }	
+.footergrid {
+    width: 100%;
+    padding: 0 5px;
+}
+	}
+	
